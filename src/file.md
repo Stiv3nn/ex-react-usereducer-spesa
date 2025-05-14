@@ -30,3 +30,5 @@ MILESTONE 2: Aggiungere prodotti al carello
                         - QUANTITA'
 
 OBIETTIVO: L'utente può aggiungere prodotti al carrello e vedere  una lista dei prodotti aggiunti
+------------------------------------------------------------------------------
+MILESTONE 3: 

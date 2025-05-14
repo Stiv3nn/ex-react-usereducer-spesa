@@ -14,19 +14,25 @@ function App() {
   const [addedProducts, setAddedProducts] = useState([]);
 
   // 7 --> CREARE LA FUNZIONE DEL FUNZIONAMENTO DEL BOTTONE AL CLICK, CHE PRENDERA' COME IMPASTO IL NOSRTO PRODUCT CHE CHIAMEREMO PRODUCT (MILESTONE 2)
-  const addToCart = () => {
+  const addToCart = product => {
     // IL NOSTRO PRODUCT DOVRA' AIUTARCI SE C'E' GIA' UN PRODOTTO O NO CON LO STESSO NOME, UTILIZZANDO SOME CHE RITORNO UN BOOLEANO (MIELSTONE 2)
     const isProductAlreadyAdded = addedProducts.some(p => p.name === product.name);
     if (isProductAlreadyAdded) {
       return;
     }
-    // 9 --> DICHIARANDO IL PRODOTTO NUOVO DEL PUNTO 9 (MILESTONE 2)
-    const productToAdd = {
+    // // 9 --> DICHIARANDO IL PRODOTTO NUOVO DEL PUNTO 9 (MILESTONE 2)
+    // const productToAdd = {
+    //   ...product,
+    //   quantity: 1
+    // }
+    // // 8 --> SE IL RPODOTTO NON E' PRESENTE (MILESTONE 2)
+    // setAddedProducts(curr => [...curr, productToAdd]);
+
+    // 11 --> UNIONE TRA IL PUNTO 8 E 9 (MILESTON 2)
+    setAddedProducts(curr => [...curr, {
       ...product,
       quantity: 1
-    }
-    // 8 --> SE IL RPODOTTO NON E' PRESENTE (MILESTONE 2)
-    setAddedProducts(curr => [...curr, productToAdd]);
+    }])
   }
 
   return (
