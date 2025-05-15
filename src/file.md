@@ -31,4 +31,13 @@ MILESTONE 2: Aggiungere prodotti al carello
 
 OBIETTIVO: L'utente può aggiungere prodotti al carrello e vedere  una lista dei prodotti aggiunti
 ------------------------------------------------------------------------------
-MILESTONE 3: 
+MILESTONE 3: modificare il carrello
+
+1 --> Al click successivo del bottone "Aggiungi al carrello", se il prodotto è già presente: 
+            - usa una funzione "updateProductQuantity" per incrementare la proprietà `quantity` del prodotto esistente
+2 --> Per ogni prodotto nel carrello, aggiungi un bottone rimuovi dal carrello:
+            - Al click, usa una funzione `removeFromCart` per rimuovere il prodtto dal carrello
+3 --> Sotto alla lista del carrello, mostra il totale per pagare:
+            - Calcola il totale moltiplicando il prezzo per la quantità di ogni prodotto e somma tutti i risultati 
+
+Obiettivo: Gestire l'aggiunta, la rimozione  e il calcolo del totale del carrello in modo dinamico.
